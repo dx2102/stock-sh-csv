@@ -4,7 +4,7 @@
 
 事先下载好的上交所日线csv数据。
 
-下载：点github界面右上角的绿色<>Code按钮，然后选菜单下面的Download Zip就行，用git也可以。因为只有上交所没有深交所，所以只有大约1685支股票，解压之后一共大约有150MB。
+下载：点github界面右上角的绿色`<>Code`按钮，然后选菜单下面的Download Zip就行，用Git也可以。因为只有上交所没有深交所，所以只有大约1685支股票，解压之后一共大约有150MB。
 
 来源：数据都是直接使用akshare库的stock_zh_a_hist下载后保存到csv的。stock_zh_a_hist会用这个网站爬取数据：<https://quote.eastmoney.com/concept/sh603777.html?from=classic>。都是前赋权的数据。
 
@@ -39,6 +39,7 @@ def read_all_stocks():
 import pandas as pd
 import akshare as ak
 import os
+
 def download_all_stocks():
     print('start')
     # create `stocks` folder
@@ -66,7 +67,7 @@ def download_all_stocks():
     print('done')
 ```
 
-你的python程序需要能访问到stocks文件夹。所以你可以把python脚本和stocks文件夹放在同一个目录下。
+你的Python程序需要能访问到stocks文件夹。所以你可以把Python脚本和stocks文件夹放在同一个目录下。
 
 文件结构：
 
